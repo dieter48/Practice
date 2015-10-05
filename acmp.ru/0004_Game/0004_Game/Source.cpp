@@ -6,6 +6,6 @@ int main() {
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
 	scanf("%d%d", &a);
-	printf("%d9%d", a, 9-a);
+	printf("%d9%d", a, 9 - a);
 	return 0;
 }
