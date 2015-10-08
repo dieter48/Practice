@@ -6,8 +6,9 @@ int main() {
 	freopen("input.txt", "r", stdin);
 	freopen("output.txt", "w", stdout);
 	scanf("%d%d", &a, &b);
-	if (a < 0) printf("%d", 109 + 109 * ((a * b) / 109) + a * b + 1);
+	int p = a * b - 109 * ((a * b) / 109);
+	if (a < 0) printf("%d", 110 + p);
 	else
-		printf("%d", a * b - 109 * ((a * b) / 109) + 1);
+		printf("%d", p + 1);
 	return 0;
 }
